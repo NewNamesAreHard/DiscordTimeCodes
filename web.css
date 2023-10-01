@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #3f3f3f; /* Grayish background color */
     background-attachment: fixed;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,16 +11,16 @@ body {
 
 h1 {
     text-align: center;
-    color: #333; /* Dark text color */
+    color: #777777; /* Title text color */
     margin-bottom: 20px; /* Add some spacing below the title */
 }
 
 form {
+    text-align: center;
     background-color: #929292e5;
     padding: 20px;
     border-radius: 10px; /* Rounded corners for the form */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
     max-width: 400px; /* Limit the maximum width of the form */
     width: 100%; /* Ensure the form takes the full width of its container */
 }
@@ -46,37 +44,22 @@ input[type="text"] {
 
 #result {
     text-align: center;
-    width: 90%;
     margin-top: 20px;
     background-color: #b9b9b9;
     border-radius: 10px; /* Rounded corners for the result div */
+    max-width: 400px; /* Limit the maximum width of the form */
+    width: 100%; /* Ensure the form takes the full width of its container */
 }
 
 /* Additional CSS for better readability of the formatted timestamp */
 #formattedTimestamp {
-    font-weight: bold;    
-    width: 90%;
+    font-weight: bold;
     text-align: center;
     color: #333;
     background-color: #dbdbdb;
-    border: 1px solid #ccc;
+    border: 1px solid #383838;
     border-radius: 5px;
-    padding: 5px;
-}
-
-/* Adjust styling for smaller screens */
-@media screen and (max-width: 600px) {
-    form {
-        width: 90%;
-        max-width: 400px;
-    }
-
-    input[type="date"],
-    input[type="time"],
-    input[type="submit"],
-    input[type="text"] {
-        width: 100%;
-    }
+    padding-bottom: 5px;
 }
 
 .time-picker {
@@ -100,4 +83,19 @@ input[type="text"] {
 
 .time-option:hover {
   background-color: #f0f0f0;
+}
+
+/* Adjust styling for smaller screens */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    input[type="date"],
+    input[type="time"],
+    input[type="submit"],
+    input[type="text"] {
+        width: 100%;
+    }
 }
