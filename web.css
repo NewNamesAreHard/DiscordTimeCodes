@@ -33,7 +33,6 @@ input[type="submit"],
 input[type="text"] {
     margin: 10px 0;
     padding: 5px;
-    width: 90%;
     font-size: 16px;
     border: 1px solid #fdfdfd;
     border-radius: 5px;
@@ -43,11 +42,11 @@ input[type="text"] {
     cursor: pointer;
     font-size: 24px;
     vertical-align: middle;
-    margin-left: 5px;
 }
 
 #result {
     text-align: center;
+    width: 90%;
     margin-top: 20px;
     background-color: #b9b9b9;
     border-radius: 10px; /* Rounded corners for the result div */
@@ -55,10 +54,11 @@ input[type="text"] {
 
 /* Additional CSS for better readability of the formatted timestamp */
 #formattedTimestamp {
-    font-weight: bold;
+    font-weight: bold;    
+    width: 90%;
     text-align: center;
     color: #333;
-    background-color: #b9b9b9;
+    background-color: #dbdbdb;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
