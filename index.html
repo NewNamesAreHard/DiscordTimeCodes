@@ -9,17 +9,17 @@
     <div id="maincontent">
         <h1>Discord Timestamp Generator</h1>
         <form id="Form">
-            <label for="datepicker">Select Date:</label>
-            <input type="date" id="datepicker" required><br><br>
+            <label for="datepicker">Date:</label>
+            <input type="date" id="datepicker" required>
 
-            <label for="timepicker">Select Time:</label>
-            <input type="time" id="timepicker" required><br><br>
+            <label for="timepicker">Time:</label>
+            <input type="time" id="timepicker" required>
 
             <input type="submit" value="Get Time Code!">
         </form>
         <div id="result">
-            <p>Unix Timestamp: <span id="timestamp"></span></p>
-            <label for="formattedTimestamp">Formatted Timestamp:</label>
+            <p>Time Code: <span id="timestamp"></span></p>
+            <label for="formattedTimestamp">Copy this:</label>
             <input type="text" id="formattedTimestamp" readonly>
             <span id="copyIcon" onclick="copyToClipboard()">📋</span>
         </div>
