@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("timestampForm").addEventListener("submit", function (e) {
+
+    document.getElementById("Form").addEventListener("submit", function (e) {
+
         e.preventDefault();
 
         const selectedDate = document.getElementById("datepicker").value;
