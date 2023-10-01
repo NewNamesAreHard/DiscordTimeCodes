@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discord Timestamp Generator</title>
+    <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <h1>Discord Timestamp Generator</h1>
+    <form id="timestampForm">
+        <label for="datepicker">Select Date:</label>
+        <input type="date" id="datepicker" required><br><br>
+
+        <label for="timepicker">Select Time:</label>
+        <input type="time" id="timepicker" required><br><br>
+
+        <input type="submit" value="Get Unix Timestamp">
+    </form>
+
+    <div id="result">
+        <p>Unix Timestamp: <span id="timestamp"></span></p>
+        <label for="formattedTimestamp">Formatted Timestamp:</label>
+        <input type="text" id="formattedTimestamp" readonly>
+        <span id="copyIcon" onclick="copyToClipboard()">📋</span>
+    </div>
+
+</body>
+</html>
