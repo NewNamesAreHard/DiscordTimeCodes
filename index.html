@@ -8,23 +8,24 @@
 <body>
     <div id="maincontent">
         <h1>Discord Timestamp Generator</h1>
-        <form id="Form">
+        <form id="form">
             <div id="pad">
                 <label for="datepicker">Date:</label>
             </div>
+
             <input type="date" id="datepicker" required>
+
             <div id="pad2">
                 <label for="timepicker">Time:</label>
             </div>
-            <input type="time" id="timepicker" required>
 
+            <input type="time" id="timepicker" required>
             <input type="submit" value="Get Time Code!">
         </form>
-        <div id="result">
-            <p>Time Code: <span id="timestamp"></span></p>            
+        <div id="result">    
             <label for="formattedTimestamp">Copy this:</label>
             <input type="text" id="formattedTimestamp" readonly>
-            <span id="copyIcon" onclick="copyToClipboard()">📋</span>
+            <span id="copyIcon" onclick="CopyToClipboard()">📋</span>
         </div>
     </div>
 </body>
