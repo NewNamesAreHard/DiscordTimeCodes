@@ -63,9 +63,7 @@ input[type="text"] {
 
 #copyIcon {
     cursor: pointer;
-    font-size: 24px;
-    vertical-align: middle;
-    border-radius: 5px;
+    font-size: 22px;
 }
 
 /* Additional CSS for better readability of the formatted timestamp */
