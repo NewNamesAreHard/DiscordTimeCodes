@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 
+:root {
+   --bg-color: #0c1624; /* Background color */
+   --box-bg-color: #aaaaaa; /* Background colors for central box elements */
+   --title-text: #fafafa; /* Title text color */
+   --border-color: #808080; /* Border for form elements */
+}
+
 body {
    font-family: "Roboto", Arial, sans-serif;
    display: flex;
    flex-direction: column;
    text-align: center;
-   background-color: #3f3f3f;
+   background-color: var(--bg-color);
    align-items: center;
    justify-content: center;
    min-height: 100vh;
@@ -15,7 +22,7 @@ h1 {
    display: flex;
    flex-direction: column;
    align-items: center;
-   color: #fafafa; /* Title text color */
+   color: var(--title-text);
    width: 100%;
    margin: 0px;
 }
@@ -25,47 +32,57 @@ h1 {
    flex-direction: column;
    align-items: center;
    text-align: center;
-   padding-bottom: 20%;
+   margin-bottom: 20%;
+   max-width: 100%;
 }
 
 #form {
    display: flex;
    flex-direction: column;
-   background-color: #797979e5;
-   margin: 1rem;
+   background-color: var(--box-bg-color);
+   margin: 0.5rem;
    padding: 1.5rem;
+   padding-top: 1rem;
    border-radius: 10px; /* Rounded corners for the form */
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    max-width: 420px; /* Limit the maximum width of the form */
-   width: 100%; /* Ensure the form takes the full width of its container */
+   width: 100%; /* Ensure the form div takes the full width of its container */
    font-size: 15px;
    font-weight: bold;
 }
 
 #padding1 {
-   padding-bottom: 0.5rem;
+   margin-bottom: 0.5rem;
 }
 
 #padding2 {
-   padding-bottom: 0.5rem;
-   padding-top: 0.5rem;
+   margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
 }
 
 #result {
+   margin: 0.5rem;
    padding: 1.5rem;
-   background-color: #b9b9b9;
-   border-radius: 10px; /* Rounded corners for the div */
+   background-color: var(--box-bg-color);
+   border-radius: 10px;
    max-width: 420px;
-   width: 100%; /* Ensure the form takes the full width of its container */
+   width: 100%; /* Ensure the result div takes the full width of its container */
 }
 
 input[type="date"],
 input[type="time"],
-input[type="submit"],
+input[type="submit"] {
+   margin-top: 0.1rem;
+   padding: 5px;
+   font-size: 15px;
+   border: 1px solid var(--border-color);
+   border-radius: 5px;
+   text-align: center;
+}
 input[type="text"] {
    padding: 5px;
    font-size: 15px;
-   border: 1px solid #808080;
+   border: 1px solid var(--border-color);
    border-radius: 5px;
    text-align: center;
 }
