@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
    // This function will be executed when the DOM is fully loaded
-   console.log("DOM content is loaded!");
+   console.log("Made by: https://github.com/NewNamesAreHard");
 
-   // Get the current date and time
    const currentDate = new Date(); // Create a new JavaScript Date object
    const currentYear = currentDate.getFullYear(); // Extract the current year from the Date object
    const currentMonth = String(currentDate.getMonth() + 1).padStart(2, "0"); // Extract the current month from the Date object and ensure it's in two-digit format (01 - 12)
