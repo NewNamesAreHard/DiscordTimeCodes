@@ -12,6 +12,8 @@ body {
 }
 
 h1 {
+   display: flex;
+   flex-direction: column;
    align-items: center;
    color: #fafafa; /* Title text color */
    width: 100%;
@@ -39,11 +41,11 @@ h1 {
    font-weight: bold;
 }
 
-#pad {
+#padding1 {
    padding-bottom: 0.5rem;
 }
 
-#pad2 {
+#padding2 {
    padding-bottom: 0.5rem;
    padding-top: 0.5rem;
 }
