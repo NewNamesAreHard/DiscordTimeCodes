@@ -89,6 +89,7 @@ input[type="text"] {
 
 #copyIcon {
    font-size: 22px;
+   cursor: pointer;
 }
 
 /* Additional CSS for better readability of the formatted timestamp */
