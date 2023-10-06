@@ -78,6 +78,7 @@ input[type="submit"] {
    border: 1px solid var(--border-color);
    border-radius: 5px;
    text-align: center;
+   cursor: pointer;
 }
 input[type="text"] {
    padding: 5px;
