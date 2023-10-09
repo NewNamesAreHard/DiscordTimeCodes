@@ -5,6 +5,7 @@
    --box-bg-color: #aaaaaa; /* Background colors for central box elements */
    --title-text: #fafafa; /* Title text color */
    --border-color: #808080; /* Border for form elements */
+   --output-bg-color: #dfdfdf; /* Background colors for output box elements */
 }
 
 body {
@@ -60,15 +61,6 @@ h1 {
    margin-top: 0.5rem;
 }
 
-#result {
-   margin: 0.5rem;
-   padding: 1.5rem;
-   background-color: var(--box-bg-color);
-   border-radius: 10px;
-   max-width: 420px;
-   width: 100%; /* Ensure the result div takes the full width of its container */
-}
-
 input[type="date"],
 input[type="time"],
 input[type="submit"] {
@@ -80,17 +72,28 @@ input[type="submit"] {
    text-align: center;
    cursor: pointer;
 }
-input[type="text"] {
+input[type="output-text"] {
    padding: 5px;
    font-size: 15px;
    border: 1px solid var(--border-color);
    border-radius: 5px;
-   text-align: center;
 }
 
-#copyIcon {
-   font-size: 22px;
-   cursor: pointer;
+#output {
+   margin: 0.5rem;
+   padding: 1.5rem;
+   background-color: var(--box-bg-color);
+   border-radius: 10px;
+   max-width: 420px;
+   width: 100%; /* Ensure the result div takes the full width of its container */
+}
+
+#output-label {
+   font-weight: bold;
+   text-align: center;
+   color: #333;
+   background-color: var(--output-bg-color);
+   border-radius: 5px;
 }
 
 /* Additional CSS for better readability of the formatted timestamp */
@@ -98,8 +101,13 @@ input[type="text"] {
    font-weight: bold;
    text-align: center;
    color: #333;
-   background-color: #dbdbdb;
+   background-color: var(--output-bg-color);
    border-radius: 5px;
+}
+
+#copyIcon {
+   font-size: 1rem;
+   cursor: pointer;
 }
 
 .time-picker {
