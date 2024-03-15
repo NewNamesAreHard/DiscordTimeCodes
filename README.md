@@ -1,4 +1,4 @@
 # DiscordTimeCodes
-Provides a quick and easy way to generate UNIX Epoch Timestamp for Discord chat use, simply copy the code the prompt spits out and you have a timeformat that is timezone universal for your discord chats.
+Presenting an efficient solution for generating UNIX Epoch Timestamps tailored for Discord chats. Copy the provided code snippet into your Discord chat effortlessly, ensuring a timezone-agnostic time format for seamless communication.
 
 To use this tool simply visit: https://newnamesarehard.github.io/DiscordTimeCodes/
