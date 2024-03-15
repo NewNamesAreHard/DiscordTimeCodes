@@ -202,88 +202,88 @@ section {
       opacity: 0.9;
    }
    70% {
-      opacity: 0.9;
+      opacity: 0.7;
    }
    100% {
-      transform: rotate(315deg) translateX(-1000px);
+      transform: rotate(312deg) translateX(-1000px);
       opacity: 0;
    }
 }
 
 span:nth-child(1) {
    top: 0;
-   right: 0;
+   right: 0%;
    left: initial;
-   animation-delay: 1.5s;
-   animation-duration: 2.65s;
+   animation-delay: 1s;
+   animation-duration: 4.0s;
 }
 span:nth-child(2) {
    top: 0;
-   right: 10%;
+   right: 8%;
    left: initial;
-   animation-delay: 2s;
-   animation-duration: 3s;
+   animation-delay: 5s;
+   animation-duration: 4.5s;
 }
 span:nth-child(3) {
    top: 0;
-   right: 20%;
+   right: 16%;
    left: initial;
    animation-delay: 3s;
-   animation-duration: 3.5s;
+   animation-duration: 4.0s;
 }
 span:nth-child(4) {
    top: 0;
-   right: 30%;
+   right: 28%;
    left: initial;
-   animation-delay: 4s;
-   animation-duration: 4s;
+   animation-delay: 5s;
+   animation-duration: 4.5s;
 }
 span:nth-child(5) {
    top: 0;
-   right: 40%;
+   right: 36%;
    left: initial;
-   animation-delay: 5s;
-   animation-duration: 6s;
+   animation-delay: 8s;
+   animation-duration: 4.0s;
 }
 span:nth-child(6) {
    top: 0;
-   right: 50%;
+   right: 45%;
    left: initial;
    animation-delay: 1.5s;
-   animation-duration: 3.75s;
+   animation-duration: 4.0s;
 }
 span:nth-child(7) {
    top: 0;
-   right: 60%;
+   right: 62%;
    left: initial;
-   animation-delay: 1.2s;
-   animation-duration: 4.45s;
+   animation-delay: 2.2s;
+   animation-duration: 4.5s;
 }
 span:nth-child(8) {
    top: 0;
    right: 70%;
    left: initial;
-   animation-delay: 1.4s;
-   animation-duration: 3.85s;
+   animation-delay: 2.4s;
+   animation-duration: 4.25s;
 }
 span:nth-child(9) {
    top: 0;
    right: 80%;
    left: initial;
    animation-delay: 3.75s;
-   animation-duration: 3.65s;
+   animation-duration: 4.65s;
 }
 span:nth-child(10) {
    top: 50%;
    right: 0%;
    left: initial;
    animation-delay: 1.75s;
-   animation-duration: 4.65s;
+   animation-duration: 4.95s;
 }
 span:nth-child(11) {
    top: 20%;
    right: 0%;
    left: initial;
    animation-delay: 2.75s;
-   animation-duration: 3.85s;
+   animation-duration: 5.75s;
 }
