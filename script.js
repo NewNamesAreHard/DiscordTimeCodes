@@ -39,10 +39,10 @@ function FillDates() {
 function SubmitDates() {
    document.getElementById("form").addEventListener("submit", function (e) {
       e.preventDefault();
-      const selectedDate = document.getElementById("datepicker").value; // Get the selected date value from the datepicker input field
-      const selectedTime = document.getElementById("timepicker").value; // Get the selected time value from the timepicker input field
-      const selectedDateTime = new Date(selectedDate + " " + selectedTime); // Combine the selected date and time into a single Date object
-      const unixTimestamp = Math.floor(selectedDateTime.getTime() / 1000); // Convert the selected date and time into a Unix timestamp (in seconds)
+      const selectedDate = document.getElementById("datepicker").value;
+      const selectedTime = document.getElementById("timepicker").value;
+      const selectedDateTime = new Date(selectedDate + " " + selectedTime);
+      const unixTimestamp = Math.floor(selectedDateTime.getTime() / 1000); // Convert the selected date and time into seconds
       let formattedTimestamp;
       if (document.getElementById("shortformat").checked) {
          formattedTimestamp = `<t:${unixTimestamp}>`;
