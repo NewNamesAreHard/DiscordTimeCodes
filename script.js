@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
    console.log("Made by: https://github.com/NewNamesAreHard");
-
-   SetDates();
+   SetInitialDates();
    FillDates();
-   Submit();
+   SubmitDates();
 });
 
 function CopyToClipboard() {
@@ -13,13 +12,14 @@ function CopyToClipboard() {
    document.execCommand("copy");
 }
 
-function SetDates() {
-   const currentDate = new Date(); // Create a new JavaScript Date object
-   const currentYear = currentDate.getFullYear(); // Extract the current year from the Date object
-   const currentMonth = String(currentDate.getMonth() + 1).padStart(2, "0"); // Extract the current month from the Date object and ensure it's in two-digit format (01 - 12)
-   const currentDay = String(currentDate.getDate()).padStart(2, "0"); // Extract the current day of the month from the Date object and ensure it's in two-digit format (01 - 31)
-   const currentHour = String(currentDate.getHours()).padStart(2, "0"); // Extract the current hour from the Date object and ensure it's in two-digit format (00 - 23)
-   const currentMinute = String(currentDate.getMinutes()).padStart(2, "0"); // Extract the current minute from the Date object and ensure it's in two-digit format (00 - 59)
+function SetInitialDates() {
+   const currentDate = new Date();
+   const currentYear = currentDate.getFullYear();
+   // Extract the current VAR from the DateOBJ in two-digit format (2 digits - Pad with 0)
+   const currentMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
+   const currentDay = String(currentDate.getDate()).padStart(2, "0");
+   const currentHour = String(currentDate.getHours()).padStart(2, "0");
+   const currentMinute = String(currentDate.getMinutes()).padStart(2, "0");
    return {
       Date: currentDate,
       Year: currentYear,
@@ -31,12 +31,12 @@ function SetDates() {
 }
 
 function FillDates() {
-   const { Date, Year, Month, Day, Hour, Minute } = SetDates();
+   const { Date, Year, Month, Day, Hour, Minute } = SetInitialDates();
    document.getElementById("datepicker").value = `${Year}-${Month}-${Day}`;
    document.getElementById("timepicker").value = `${Hour}:${Minute}`;
 }
 
-function Submit() {
+function SubmitDates() {
    document.getElementById("form").addEventListener("submit", function (e) {
       e.preventDefault();
       const selectedDate = document.getElementById("datepicker").value; // Get the selected date value from the datepicker input field
